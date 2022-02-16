@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+integrity=
+"sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" 
+crossorigin="anonymous">
+</script>
+
+  <script>
+    $(document).ready(function(){
+    $("#sl3").click(function(){
+    $("#d1").slideToggle();   });
+  });
+    </script>
+    <script>
+     $(document).ready(function(){
+    $("#sl4").click(function(){
+    $("#d1").fadeOut();
+        });
+      });
+      </script>
+
+<script>
+  $(document).ready(function(){
+ $("#sl5").click(function(){
+ $("#d1").fadeToggle();
+     });
+   });
+   </script>
+   <script>
+    $(document).ready(function(){
+   $("#sl6").click(function(){
+   $("#d1").fadeIn();
+       });
+     });
+     </script><script>
+        $(document).ready(function(){
+          $("#sl7").click(function(){
+          $("#d1").slideDown();
+              });
+            });
+            </script>
+            <script>
+              $(document).ready(function(){
+                $("#sl8").click(function(){
+                $("#d1").slideToggle();
+                    });
+                  });
+                  </script>
+
+<style>
+        body {
+            height: 200px;
+            background-image: linear-gradient(to right, rgba(0,212,256,1), rgba(9,9,121,1));
+          }
+
+          h1.tit{
+              text-align: center  ;
+              font-size: 25px;
+          }
+     
+          input[type=text] {
+            width: 30%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            border: 2px solid blue;
+            border-radius: 4px;
+          }
+            img.pic{
+            border-radius: 50%;
+            margin-left: 200px;
+            padding-left: 500px;
+            width: 150px;
+            height: 150px;
+            }
+    
+          </style>
+<body>
+  
+
+<h1 class="tit" style= "font-family:Wide Latin ">REGISTRATION FORM</h1>
+
+
+<form action="" method="POST">
+       
+        <label for="fname">First Name</label>
+  <input type="text" id="fname" name="fname"> 
+
+<br>
+<label for="lname">Last Name</label>
+  <input type="text" id="lname" name="lname"><br>
+
+Gender:<input type="radio" name="Gender" Value="Male">Male
+       <input type="radio" name="Gender" Value="Female">Female<br>
+       <br>
+
+Hobbies: <input type="checkbox" name="Hobbies" Value="Playing">Playing
+         <input type="checkbox" name="Hobbies" Value="Singing">Singing
+         <br><br>
+<p>PinCode:  <input type = "password" name = "pin" maxlength = "6"></p>
+<br> <br>
+
+Age:<label for="URL"></label> <input type="text" min="18" max="50" value="19">
+<br><br>
+DOJ: <input type="date" value="August/18/2015">
+<br>
+<br>
+Email:<label for="Email"></label>
+  <input type="text" id="text" Email="text">
+<BR>
+<br>
+Url: <label for="URL"></label>
+<input type="text" value="http://google.co.in">
+<br>
+<br>
+Search:<label for="URL"></label> 
+<input type="text" value="Google">
+<BR>
+<br>
+Country: <input type="text" list="l1" value="None">
+<br>
+
+<datalist id="l1">
+<option value="India">India
+<option value="Indonesia">Indonesia
+<option value="UK">U.K.
+<option value="Japan">Japan
+<option value="Italy">Italy
+</datalist><br>
+Range: <input type="range" min="5" max="10"><br>
+Tel: <input type="number" value="123-456-7890"><br>
+<fieldset>
+<legend>Degree</legend>
+<input type="checkbox" name="ABC" value="B.E.">B.E.
+<input type="checkbox" name="ABC" value="M.E.">M.E.<br>
+<input type="checkbox" name="ABC" value="B.TECH.">B.TECH.
+<input type="checkbox" name="ABC" value="M.TECH.">M.TECH.
+</fieldset>
+Color: <input type="color" value="red"><BR>
+<br>
+Location: <select name="location">
+<option value="India">India</option>
+<option value="USSR">U.S.S.R.</option>
+<option value="UK">U.K.</option>
+<option value="Japan">Japan</option>
+</select><br>
+<br>
+<button  id= "show">Show image</button>
+    <button id="hide">Hide image</button>
+    <input type="button" value="toggle" id="sl3">
+    <input type="button" value="Fadein" id="sl6">
+    <input type="button" value="fadeOut" id="sl4">
+    <input type="button" value="FADEToggle" id="sl5">
+    <input type="button" value="slideDown" id="sl7">
+    <input type="button" value="slideToggle" id="sl8">
+  
+    <img id="image" src="images1.jpg"
+    alt="Photo">
+    <script>
+      $(document).ready(function () {
+          $("#image").hide();
+          $("#hide").attr('disabled', true);
+          $("#hide").click(function () {
+              $("#image").hide();
+              $("#hide").attr('disabled', true);
+              $("#show").attr('disabled', false);
+             
+    
+          });
+          $("#show").click(function () {
+              $("#image").show();
+              $("#hide").attr('disabled', false);
+              $("#show").attr('disabled', true);
+              
+    });
+  });</script>
+    
+
+    <div id="d1">
+      <img src="images1.jpg">
+      </div>
+
+</script><br>
+
+
+Comments: <textarea name="feedback" rows="4" cols="20">
+Review your comments
+</textarea><br>
+ <input type="reset"> <input type="button" value="OK">
+<a href="file:///D:/Spring%20Copy/canvas.html">submit</a>
+</form>
+
+
+</body>
+</html>
